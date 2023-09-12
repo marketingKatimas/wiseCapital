@@ -23,12 +23,19 @@
 	<!-- Google Recaptcha -->
 	<script src="https://www.google.com/recaptcha/api.js?render=6LdmCn0nAAAAANC8dQDeC3bko97zlloPkuFcyP7_"></script>
 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CDPG3Y1N81"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-CDPG3Y1N81');
+	</script>
+
 </head>
 
 <body>
-
 	<div class="page-wrapper">
-
 		<!-- Preloader -->
 		<div class="preloader"></div>
 		<!-- End Preloader -->
@@ -102,8 +109,8 @@
 											<div class="btn-wrap">
 												<span class="text-one" id="navApplyNowOne">Apply Now <i
 														class="fa-solid fa-arrow-right fa-fw"></i></span>
-												<span class="text-two" id="navApplyNowTwo">Apply Now<i
-														class="fa-solid fa-arrow-right fa-fw"></i></span>
+												<!-- <span class="text-two" id="navApplyNowTwo">Apply Now<i
+														class="fa-solid fa-arrow-right fa-fw"></i></span> -->
 											</div>
 										</a>
 									</div>
@@ -124,10 +131,8 @@
 									<div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span>
 									</div>
 								</div>
-
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -154,8 +159,8 @@
 										<div class="btn-wrap">
 											<span class="text-one" id="stickyHeaderApplyNowOne">Apply Now<i
 													class="fa-solid fa-arrow-right fa-fw"></i></span>
-											<span class="text-two" id="stickyHeaderAppyNowTwo">Apply Now <i
-													class="fa-solid fa-arrow-right fa-fw"></i></span>
+											<!-- <span class="text-two" id="stickyHeaderAppyNowTwo">Apply Now <i
+													class="fa-solid fa-arrow-right fa-fw"></i></span> -->
 										</div>
 									</a>
 								</div>
@@ -199,8 +204,8 @@
 									<div class="btn-wrap">
 										<span class="text-one" id="mobileMenuApplyNowOne">Apply Now <i
 												class="fa-solid fa-arrow-right fa-fw"></i></span>
-										<span class="text-two" id="mobileMenuApplyNowTwo">Apply Now<i
-												class="fa-solid fa-arrow-right fa-fw"></i></span>
+										<!-- <span class="text-two" id="mobileMenuApplyNowTwo">Apply Now<i
+												class="fa-solid fa-arrow-right fa-fw"></i></span> -->
 									</div>
 								</a>
 							</div>
@@ -452,10 +457,9 @@
 													href="https://goo.gl/maps/5eiQBrqhAkoEsVRk7">No.06-01, Jalan Suria
 													2, Bandar Seri Alam, 81750 Masai, Johor.</a>
 											</li>
-											<li><span class="icon fa fa-phone"></span> <a href="tel:07-2872199">07-287
-													2199 /</a> <a
-													href="https://api.whatsapp.com/send?phone=60168901795">016-890
-													1795</a></li>
+											<li><span class="icon fa fa-phone"></span> <a href="tel:07-2872199"><a
+														href="https://api.whatsapp.com/send?phone=60168901795">016-890
+														1795</a></li>
 											<li><span class="icon fa fa-envelope"></span> <a
 													href="mailto:contact@wisecapitalcredit.com">contact@wisecapitalcredit.com</a>
 											</li>
@@ -485,19 +489,6 @@
 
 	</div>
 	<!-- End PageWrapper -->
-
-	<!-- Search Popup -->
-	<div class="search-popup">
-		<div class="color-layer"></div>
-		<button class="close-search"><span class="flaticon-020-x-mark"></span></button>
-		<form method="post" action="blog.html">
-			<div class="form-group">
-				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
-				<button type="submit"><i class="flaticon-001-loupe"></i></button>
-			</div>
-		</form>
-	</div>
-	<!-- End Search Popup -->
 
 	<!-- Scroll To Top -->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
@@ -634,8 +625,5 @@
 			$('.error_message').hide();
 		})
 	</script>
-
-
 </body>
-
 </html>

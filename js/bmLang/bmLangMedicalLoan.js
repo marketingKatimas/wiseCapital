@@ -140,11 +140,11 @@ function updateNavbar(language) {
         navEducationLoan.textContent = 'Pembiayaan Pendidikan';
         navContactUs.textContent = 'Hubungi Kami';
         navApplyNowOne.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
-        navApplyNowTwo.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
+        // navApplyNowTwo.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
         stickyHeaderApplyNowOne.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
-        stickyHeaderAppyNowTwo.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
+        // stickyHeaderAppyNowTwo.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
         mobileMenuApplyNowOne.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
-        mobileMenuApplyNowTwo.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
+        // mobileMenuApplyNowTwo.innerHTML = 'Mohon Sekarang <i class="fa-solid fa-arrow-right fa-fw"></i>';
     } else {
         navHome.textContent = 'Home';
         navAboutUs.textContent = 'About Us';
@@ -161,11 +161,11 @@ function updateNavbar(language) {
         navEducationLoan.textContent = 'Education Loan';
         navContactUs.textContent = 'Contact Us';
         navApplyNowOne.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
-        navApplyNowTwo.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
+        // navApplyNowTwo.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
         stickyHeaderApplyNowOne.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
-        stickyHeaderAppyNowTwo.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
+        // stickyHeaderAppyNowTwo.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
         mobileMenuApplyNowOne.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
-        mobileMenuApplyNowTwo.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
+        // mobileMenuApplyNowTwo.innerHTML = 'Apply Now <i class="fa-solid fa-arrow-right fa-fw"></i>';
     }
 }
 
@@ -198,7 +198,7 @@ function updateSidebar(language) {
         sidebarBusinessLoan.textContent = 'Business Loan';
         sidebarDebtConsolidation.textContent = 'Debt Consolidation';
         sidebarIslamicFinancing.textContent = 'Islamic Financing';
-        sidebarWeddingPlan.textContent = 'Wedding Plan';
+        sidebarWeddingPlan.textContent = 'Wedding Loan';
         sidebarRenovationLoan.textContent = 'Renovation Loan';
         sidebarMedicalLoan.textContent = 'Medical Loan';
         sidebarEducationLoan.textContent = 'Education Loan';
