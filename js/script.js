@@ -10,8 +10,6 @@
 		}
 	}
 	
-	
-	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
 		if($('.main-header').length){
@@ -77,9 +75,6 @@
 			selector.find("li").eq(0).addClass("current");
 		}
 	}
-	
-	
-	
 	
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
@@ -232,9 +227,6 @@
 		$('.filter-list').mixItUp({});
 	}
 	
-	
-	
-	
 	// Single Item Carousel
 	if ($('.single-item-carousel').length) {
 		$('.single-item-carousel').owlCarousel({
@@ -299,8 +291,6 @@
 			}
 		});
 	}
-	
-	
 	
 	// Services Carousel
 	if ($('.services-carousel').length) {
@@ -401,9 +391,6 @@
 		});
 	}
 	
-	
-	
-	
 	// Case Carousel Two
 	if ($('.case-carousel-two').length) {
 		$('.case-carousel-two').owlCarousel({
@@ -437,9 +424,6 @@
 		});
 	}
 	
-	
-	
-	
 	// News Carousel
 	if ($('.news-carousel').length) {
 		$('.news-carousel').owlCarousel({
@@ -471,9 +455,6 @@
 			}
 		});
 	}
-	
-	
-	
 	
 	// Sponsors Carousel
 	if ($('.sponsors-carousel').length) {
@@ -600,52 +581,52 @@
 	
 	
 	
-	//LightBox Video
-	if($('.lightbox-video').length) {
-		$('.lightbox-video').magnificPopup({
-	      // disableOn: 700,
-	      type: 'iframe',
-	      mainClass: 'mfp-fade',
-	      removalDelay: 160,
-	      preloader: false,
-	      iframe:{
-	        patterns:{
-	          youtube:{
-	          index: 'youtube.com',
-	          id: 'v=',
-	          src: 'https://www.youtube.com/embed/%id%'
-	        },
-	      },
-	      srcAction:'iframe_src',
-	    },
-	      fixedContentPos: false
-	    });
-	}
+	// //LightBox Video
+	// if($('.lightbox-video').length) {
+	// 	$('.lightbox-video').magnificPopup({
+	//       // disableOn: 700,
+	//       type: 'iframe',
+	//       mainClass: 'mfp-fade',
+	//       removalDelay: 160,
+	//       preloader: false,
+	//       iframe:{
+	//         patterns:{
+	//           youtube:{
+	//           index: 'youtube.com',
+	//           id: 'v=',
+	//           src: 'https://www.youtube.com/embed/%id%'
+	//         },
+	//       },
+	//       srcAction:'iframe_src',
+	//     },
+	//       fixedContentPos: false
+	//     });
+	// }
 	
 	
 	
-	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				username: {
-					required: true
-				},
-				phone: {
-					required: true
-				},
-				services: {
-					required: true
-				},
-				email: {
-					required: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
+	// //Contact Form Validation
+	// if($('#contact-form').length){
+	// 	$('#contact-form').validate({
+	// 		rules: {
+	// 			username: {
+	// 				required: true
+	// 			},
+	// 			phone: {
+	// 				required: true
+	// 			},
+	// 			services: {
+	// 				required: true
+	// 			},
+	// 			email: {
+	// 				required: true
+	// 			},
+	// 			message: {
+	// 				required: true
+	// 			}
+	// 		}
+	// 	});
+	// }
 	
 	
 	

@@ -20,6 +20,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+	<!-- Google Recaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdmCn0nAAAAANC8dQDeC3bko97zlloPkuFcyP7_"></script>
+
 </head>
 
 <body>
@@ -59,25 +62,34 @@
 
 									<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 										<ul class="navigation clearfix">
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about-us.html">About Us</a></li>
-											<li class="dropdown"><a href="#">Our Services</a>
+											<li><a href="index.html" id="navHome">Home</a></li>
+											<li><a href="about-us.html" id="navAboutUs">About Us</a></li>
+											<li class="dropdown"><a href="#" id="navOurServices">Our Services</a>
 												<ul>
-													<li><a href="personal-loan-calculator.html">Personal Loan
+													<li><a href="personal-loan-calculator.html"
+															id="navPersonalLoanCalculator">Personal Loan
 															Calculator</a></li>
-													<li><a href="personal-loan.html">Personal Loan</a></li>
-													<li><a href="payday-loan.html">Payday Loan</a></li>
-													<li><a href="business-loan.html">Business Loan</a></li>
-													<li><a href="debt-consolidation.html">Debt Consolidation</a></li>
-													<li><a href="islamic-financing.html">Islamic Financing</a></li>
-													<li><a href="wedding-loan.html">Wedding Loan</a></li>
-													<li><a href="renovation-loan.html">Renovation Loan</a></li>
-													<li><a href="medical-loan.html">Medical Loan</a></li>
-													<li><a href="education-loan.html">Education Loan</a></li>
+													<li><a href="personal-loan.html" id="navPersonalLoan">Personal
+															Loan</a></li>
+													<li><a href="payday-loan.html" id="navPaydayLoan">Payday Loan</a>
+													</li>
+													<li><a href="business-loan.html" id="navBusinessLoan">Business
+															Loan</a></li>
+													<li><a href="debt-consolidation.html" id="navDebtConsolidation">Debt
+															Consolidation</a></li>
+													<li><a href="islamic-financing.html"
+															id="navIslamicFinancing">Islamic Financing</a></li>
+													<li><a href="wedding-loan.html" id="navWeddingLoan">Wedding Loan</a>
+													</li>
+													<li><a href="renovation-loan.html" id="navRenovationLoan">Renovation
+															Loan</a></li>
+													<li><a href="medical-loan.html" id="navMedicalLoan">Medical Loan</a>
+													</li>
+													<li><a href="education-loan.html" id="navEducationLoan">Education
+															Loan</a></li>
 												</ul>
 											</li>
-											<li><a href="contact-us.html">Contact Us</a></li>
-
+											<li><a href="contact-us.html" id="navContactUs">Contact Us</a></li>
 										</ul>
 									</div>
 
@@ -88,9 +100,9 @@
 									<div class="button-box">
 										<a class="btn-style-three theme-btn btn-item" href="apply-now.html">
 											<div class="btn-wrap">
-												<span class="text-one">Apply Now <i
+												<span class="text-one" id="navApplyNowOne">Apply Now <i
 														class="fa-solid fa-arrow-right fa-fw"></i></span>
-												<span class="text-two">Apply Now <i
+												<span class="text-two" id="navApplyNowTwo">Apply Now<i
 														class="fa-solid fa-arrow-right fa-fw"></i></span>
 											</div>
 										</a>
@@ -132,8 +144,7 @@
 						<!-- Right Col -->
 						<div class="right-box d-flex align-items-center flex-wrap">
 							<!-- Main Menu -->
-							<nav class="main-menu">
-								<!--Keep This Empty / Menu will come through Javascript-->
+							<nav class="main-menu navbar-expand-md">
 							</nav>
 							<!-- Main Menu End-->
 
@@ -141,9 +152,9 @@
 								<div class="button-box">
 									<a class="btn-style-three theme-btn btn-item" href="apply-now.html">
 										<div class="btn-wrap">
-											<span class="text-one">Apply Now <i
+											<span class="text-one" id="stickyHeaderApplyNowOne">Apply Now<i
 													class="fa-solid fa-arrow-right fa-fw"></i></span>
-											<span class="text-two">Apply Now <i
+											<span class="text-two" id="stickyHeaderAppyNowTwo">Apply Now <i
 													class="fa-solid fa-arrow-right fa-fw"></i></span>
 										</div>
 									</a>
@@ -163,7 +174,6 @@
 
 								<!-- Mobile Navigation Toggler -->
 								<div class="mobile-nav-toggler"><span class="icon fa-solid fa-bars fa-fw"></span></div>
-
 							</div>
 
 						</div>
@@ -187,9 +197,9 @@
 							<div class="button-box">
 								<a class="btn-style-three theme-btn btn-item" href="apply-now.html">
 									<div class="btn-wrap">
-										<span class="text-one">Apply Now <i
+										<span class="text-one" id="mobileMenuApplyNowOne">Apply Now <i
 												class="fa-solid fa-arrow-right fa-fw"></i></span>
-										<span class="text-two">Apply Now<i
+										<span class="text-two" id="mobileMenuApplyNowTwo">Apply Now<i
 												class="fa-solid fa-arrow-right fa-fw"></i></span>
 									</div>
 								</a>
@@ -211,17 +221,16 @@
 				</nav>
 			</div>
 			<!-- End Mobile Menu -->
-
 		</header>
 		<!-- End Main Header -->
 
 		<!-- Page Title -->
 		<section class="page-title" style="background-image:url(images/background/header-contact-us.png)">
 			<div class="auto-container">
-				<h2>online Application Form</h2>
+				<h2 id="OnlineApplicationLoanTitle">online Application Form</h2>
 				<ul class="bread-crumb clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li>Online Application Form</li>
+					<li><a href="index.html" id="HomeTitle">Home</a></li>
+					<li id="OnlineApplicationForm">Online Application Form</li>
 				</ul>
 			</div>
 		</section>
@@ -239,37 +248,38 @@
 
 							<!-- Contact Block -->
 							<div class="contact-block">
-								<strong>Document Section</strong>
-								Make sure to prepare these documents: <br><br>
+								<strong id="DocumentSection">Document Section</strong>
+								<span id="PrepareDocuments">Make sure to prepare these documents:</span> <br><br>
 								<div class="block-inner-apply">
 									<span class="icon"><img src="images/icons/mykad-images.png" alt="" /></span>
-									<p>Photocopy MyKad</p>
+									<p id="Mykad">Photocopy MyKad</p>
 								</div>
 								<div class="block-inner-apply">
 									<span class="icon"><img src="images/icons/payslip-1.png" alt="" /></span>
-									<p> Latest 3 months’ payslip, bank statements & EPF statement </p>
+									<p id="PayslipBankStatement"> Latest 3 months’ payslip, bank statements & EPF
+										statement </p>
 								</div>
 								<div class="block-inner-apply">
 									<span class="icon"><img src="images/icons/bill-1.png" alt="" /></span>
-									<p> Latest Utilities bill (electric or water bill)</p>
+									<p id="UtilitiesBill"> Latest Utilities bill (electric or water bill)</p>
 								</div>
 							</div>
 
 							<!-- Contact Block -->
 							<div class="contact-block">
-								<strong>Transaction Channels</strong>
-								All transaction are made through these channels: <br><br>
+								<strong id="TransactionChannels">Transaction Channels</strong>
+								<span id="MadeThrough">All transaction are made through these channels:</span><br><br>
 								<div class="block-inner-apply">
 									<span class="icon"><img src="images/icons/direct-debit-icon.png" alt="" /></span>
-									<p>Direct Debit(e-Mandate)</p>
+									<p id="DirectDebit">Direct Debit(e-Mandate)</p>
 								</div>
 								<div class="block-inner-apply">
 									<span class="icon"><img src="images/icons/jompay-icon.png" alt="" /></span>
-									<p> JomPAY</p>
+									<p id="JomPay">JomPAY</p>
 								</div>
 								<div class="block-inner-apply">
 									<span class="icon"><img src="images/icons/fpx-icon.png" alt="" /></span>
-									<p> FPX Payment</p>
+									<p id="FPXPayment"> FPX Payment</p>
 								</div>
 							</div>
 
@@ -283,7 +293,6 @@
 							<!-- Contact Form -->
 							<div class="contact-form">
 								<form method="post" id="applyForm">
-									<!-- <form method="post" action="sendemail.php" id="contact-form"> -->
 									<div class="row clearfix">
 
 										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -351,22 +360,32 @@
 										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
 											<label for="nett_salary" class="formbold-form-label" id="MonthlyNettSalary">
 												Monthly Nett Salary (RM): </label>
-											<input type="text" name="nett_salary" id="nett_salary" placeholder="0"
+											<input type="text" name="nettSalary" id="nettSalary" placeholder="0"
 												class="formbold-form-input" inputmode="numeric" />
-											<div class="error-message" id="nett_salaryError" style="color: red;"></div>
+											<div class="error-message" id="nettSalaryError" style="color: red;"></div>
 										</div>
 
 										<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-											<button class="btn-style-seven theme-btn">
+											<button class="btn-style-seven theme-btn g-recaptcha"
+												data-sitekey="6LdmCn0nAAAAANC8dQDeC3bko97zlloPkuFcyP7_"
+												data-callback='onSubmit' data-action='submit' id="Submit">
 												<span class="btn-wrap">
-													<span class="text-one">Send message</span>
-													<span class="text-two">Send message</span>
+													<span class="text-one" id="SendMessageOne">Send message</span>
+													<span class="text-two" id="SendMessageTwo">Send message</span>
 												</span>
 											</button>
 										</div>
-
 									</div>
 								</form>
+
+								<div id="success-message"
+									style="display: none; color: #472F92; border: 1px solid #472F92; padding: 20px">
+									Thanks for contacting us! We will be in touch with you shortly.
+								</div>
+
+								<div id="Unsuccessfully-message" style="display: none; color: red;">
+									From Unsuccessfully send. Please try again.
+								</div>
 							</div>
 							<!-- End Comment Form -->
 
@@ -383,12 +402,13 @@
 			<div class="auto-container">
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
 					<div class="left-box">
-						<h3 class="cta-one_heading">Looking for easy money loans?</h3>
-						<div class="cta-one_text">Our professional loan officers are just a call away for all your
+						<h3 class="cta-one_heading" id="LookingFor">Looking for easy money loans?</h3>
+						<div class="cta-one_text" id="Ourprofessional">Our professional loan officers are just a call
+							away for all your
 							financial needs</div>
 					</div>
 					<div class="right-box">
-						<a class="cta-one_btn theme-btn" href="apply-now.html">Apply Now</a>
+						<a class="cta-one_btn theme-btn" href="apply-now.html" id="ApplyNowBanner">Apply Now</a>
 					</div>
 				</div>
 			</div>
@@ -413,34 +433,22 @@
 											<a href="index.html"><img src="images/footer-logo-wise-capital.png"
 													alt="" /></a>
 										</div>
-										<div class="text">Wise Capital Credit Sdn Bhd is your wisest choice for safe
+										<div class="text" id="footerWiseCaspital">Wise Capital Credit Sdn Bhd is your
+											wisest choice for safe
 											financing.</div>
-
-										<!-- Social Box -->
-										<!-- <ul class="social-box">
-											<li><a href="https://www.twitter.com/"
-													class="fa-brands fa-facebook-f fa-fw"></a></li>
-											<li><a href="https://www.facebook.com/"
-													class="fa-brands fa-twitter fa-fw"></a></li>
-											<li><a href="https://dribbble.com/" class="fa-solid fa-dribbble fa-fw"></a>
-											</li>
-											<li><a href="https://behance.com/" class="fa-solid fa-behance fa-fw"></a>
-											</li>
-										</ul> -->
-										<!-- End Social Box -->
 									</div>
 								</div>
 
 								<!-- Footer Column -->
 								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget newsletter-widget">
-										<h4>Useful Links</h4>
+										<h4 id="usefulLinks">Useful Links</h4>
 										<ul class="contact-list">
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about-us.html">About Us</a></li>
-											<li><a href="personal-loan.html">Our Loan</a></li>
-											<li><a href="contact-us.html">Contact Us</a></li>
-											<li><a href="apply-now.html">Apply Now</a></li>
+											<li><a href="index.html" id="footerHome">Home</a></li>
+											<li><a href="about-us.html" id="footerAboutUs">About Us</a></li>
+											<li><a href="personal-loan.html" id="footerOurLoan">Our Loan</a></li>
+											<li><a href="contact-us.html" id="footerContactUs">Contact Us</a></li>
+											<li><a href="apply-now.html" id="footerApplyNow">Apply Now</a></li>
 										</ul>
 									</div>
 								</div>
@@ -455,19 +463,26 @@
 								<!-- Footer Column -->
 								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget newsletter-widget">
-										<h4>Our Services</h4>
+										<h4 id="footerOurServices">Our Services</h4>
 										<ul class="contact-list">
-											<li><a href="personal-loan-calculator.html">Personal Loan Calculator</a>
+											<li><a href="personal-loan-calculator.html"
+													id="footerPersonalLoanCalculator">Personal Loan Calculator</a>
 											</li>
-											<li><a href="personal-loan.html">Personal Loan</a></li>
-											<li><a href="payday-loan.html">Payday Loan</a></li>
-											<li><a href="business-loan.html">Business Loan</a></li>
-											<li><a href="debt-consolidation.html">Debt Consolidation</a></li>
-											<li><a href="islamic-financing.html">Islamic Fiancing</a></li>
-											<li><a href="wedding-loan.html">Wedding Loan</a></li>
-											<li><a href="renovation-loan.html">Renovation Loan</a></li>
-											<li><a href="medical-loan.html">Medical Loan</a></li>
-											<li><a href="education-loan.html">Education Loan</a></li>
+											<li><a href="personal-loan.html" id="footerPersonalLoan">Personal Loan</a>
+											</li>
+											<li><a href="payday-loan.html" id="footerPaydayLoan">Payday Loan</a></li>
+											<li><a href="business-loan.html" id="footerBusinessLoan">Business Loan</a>
+											</li>
+											<li><a href="debt-consolidation.html" id="footerDebtConsolidation">Debt
+													Consolidation</a></li>
+											<li><a href="islamic-financing.html" id="footerIslamicFinancing">Islamic
+													Financing</a></li>
+											<li><a href="wedding-loan.html" id="footerWeddingLoan">Wedding Loan</a></li>
+											<li><a href="renovation-loan.html" id="footerRenovationLoan">Renovation
+													Loan</a></li>
+											<li><a href="medical-loan.html" id="footerMedicalLoan">Medical Loan</a></li>
+											<li><a href="education-loan.html" id="footerEducationLoan">Education
+													Loan</a></li>
 										</ul>
 									</div>
 								</div>
@@ -475,7 +490,7 @@
 								<!-- Footer Column -->
 								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
 									<div class="footer-widget contact-widget">
-										<h4>Our Services</h4>
+										<h4 id="footerOurLocation">Our Location</h4>
 										<ul class="contact-list">
 											<li><span class="icon fa fa-location-arrow"></span> <a
 													href="https://goo.gl/maps/5eiQBrqhAkoEsVRk7">No.06-01, Jalan Suria
@@ -490,8 +505,9 @@
 											</li>
 										</ul>
 										<div class="timing">
-											<strong>Open Hours: </strong>
-											Mon - Fri: 8:30 am - 5:30 pm, <br> Sat: 8:30 am - 1:30 pm,<br>Sunday: CLOSED
+											<h4 id="footerOpenHours">Open Hours</h4>
+											<span id="footerTheHour">Mon - Fri: 8:30 am - 5:30 pm, <br> Sat: 8:30 am -
+												1:30 pm,<br>Sunday: CLOSED</span>
 										</div>
 									</div>
 								</div>
@@ -530,6 +546,7 @@
 	<!-- Scroll To Top -->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
 
+	<script src="js/bmLang/bmLangApplyNow.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/appear.js"></script>
 	<script src="js/owl.js"></script>
@@ -545,8 +562,157 @@
 
 	<script src="js/script.js"></script>
 
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	<script>
+		grecaptcha.ready(() => {
+			console.log('grecaptcha is ready');
+		})
+
+		function displayErrorMessage(inputFieldId, errorMessage) {
+			const errorElement = document.getElementById(`${inputFieldId}Error`);
+			if (errorElement) {
+				errorElement.textContent = errorMessage;
+			}
+		}
+
+		function validateForm() {
+			let isValid = true;
+			const amountInput = document.getElementById('amount');
+			const ageInput = document.getElementById('age');
+			const nameInput = document.getElementById('name');
+			const emailInput = document.getElementById('email');
+			const phoneInput = document.getElementById('phone');
+			const sectorInput = document.getElementById('sector');
+			const salaryInput = document.getElementById('salary');
+			const nett_salaryInput = document.getElementById('nettSalary');
+
+			if (amountInput.value.trim() === '') {
+				displayErrorMessage('amount', 'This fields is required');
+				isValid = false;
+			} else {
+				displayErrorMessage('amount', '');
+			}
+
+			if (ageInput.value.trim() === '') {
+				displayErrorMessage('age', 'This fields is required');
+				isValid = false;
+			} else {
+				displayErrorMessage('age', '');
+			}
+
+			if (nameInput.value.trim() === '') {
+				displayErrorMessage('name', 'This fields is required');
+				isValid = false;
+			} else {
+				displayErrorMessage('name', '');
+			}
+
+			const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+			if (emailInput.value.trim() === '') {
+				displayErrorMessage('email', 'This field is required.');
+				isValid = false;
+			} else if (!emailRegex.test(emailInput.value)) {
+				displayErrorMessage('email', 'Invalid email format.');
+				isValid = false;
+			} else {
+				displayErrorMessage('email', '');
+			}
+
+			if (phoneInput.value.trim() === '') {
+				displayErrorMessage('phone', 'This fields is required');
+				isValid = false;
+			} else {
+				displayErrorMessage('phone', '');
+			}
+
+			if (sectorInput.value.trim() === '' || sectorInput.value === 'default') {
+				displayErrorMessage('sector', 'Please select a sector');
+				isValid = false;
+			} else {
+				displayErrorMessage('sector', '');
+			}
+
+			if (salaryInput.value.trim() === '') {
+				displayErrorMessage('salary', 'This fields is required');
+				isValid = false;
+			} else {
+				displayErrorMessage('salary', '');
+			}
+
+			if (nett_salaryInput.value.trim() === '') {
+				displayErrorMessage('nettSalary', 'This fields is required');
+				isValid = false;
+			} else {
+				displayErrorMessage('nettSalary', '');
+			}
+			return isValid;
+		}
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const inputFields = ['amount', 'age', 'phone', 'salary', 'nettSalary'];
+
+			inputFields.forEach(function (fieldId) {
+				const inputField = document.getElementById(fieldId);
+				inputField.addEventListener('input', function () {
+					inputField.value = inputField.value.replace(/\D/g, '');
+				});
+			});
+		});
+
+		function serializeForm(formData) {
+			var data = JSON.stringify(formData)
+			return data
+		}
+
+		function sendData(formValue, quiet = false) {
+			$.ajax({
+				// url: 'https://scripts.katimas.brixmind.com/applyform',
+				url: 'http://localhost:3535/applyform',
+				type: 'POST',
+				data: formValue,
+				success: function (data) {
+					console.log('Success', data);
+					$('#applyForm').hide();
+					$('#success-message').show();
+					resetForm();
+				},
+				error: function (xhr, status, error) {
+					if (!quiet) {
+						console.error('An error occured:', error);
+						$('#Unsuccessfully-message').show();
+					}
+				}
+			});
+		}
+
+		function resetForm() {
+			$(':input', '#applyForm')
+				.not(':button, :submit, :reset, :hidden')
+				.val('')
+				.prop('checked', false)
+				.prop('selected', false);
+		}
+
+		function onSubmit(token, quiet = false) {
+			const form = $('#applyForm');
+			const formValue = form.serialize();
+
+			if (validateForm()) {
+				grecaptcha.execute('6LdmCn0nAAAAANC8dQDeC3bko97zlloPkuFcyP7_', { action: 'submit' }).then((token) => {
+					var form = $('#applyForm');
+					form.prepend(`<input type="hidden" name="token" value="${token}" />`);
+					sendData(form.serialize(), quiet);
+				})
+					.catch((error) => {
+						console.log('An error occurred executing grecaptcha:', error);
+					});
+			}
+		}
+
+		$(document).ready(() => {
+			$('.error_message').hide();
+		});
+
+	</script>
 
 </body>
 

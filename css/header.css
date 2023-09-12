@@ -235,7 +235,21 @@
 	transition:all 300ms ease;
 }
 
+.main-header .main-menu-menu{
+	position:relative;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+
 .main-header .main-menu .navbar-collapse{
+	padding:0px;
+	display:block;
+}
+
+.main-header .main-menu-menu .navbar-collapse{
 	padding:0px;
 	display:block;
 }
@@ -244,7 +258,22 @@
 	position:relative;
 }
 
+.main-header .header-lower .main-menu-menu .navigation{
+	position:relative;
+}
+
 .main-header .main-menu .navigation > li{
+	position:relative;
+	display:inline-block;
+	transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	margin-right:var(--margin-right-40);
+}
+
+.main-header .main-menu-menu .navigation > li{
 	position:relative;
 	display:inline-block;
 	transition:all 500ms ease;
@@ -334,7 +363,48 @@
 	-o-transition:all 500ms ease;
 }
 
+.main-header .main-menu-menu .navigation > li > a{
+	position:relative;
+	display:block;
+	z-index:1;
+	text-align:center;
+	line-height:30px;
+	font-weight:700;
+	padding:16px 0px;
+	letter-spacing:1px;
+	color:var(--white-color);
+	font-size:var(--font-16);
+	text-transform: capitalize;
+	transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+}
+
 .main-header .main-menu .navigation > li > a:before{
+	position:absolute;
+	content:'';
+	left:50%;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	width:62px;
+	height:62px;
+	z-index:-1;
+	opacity:0;
+	border-radius:50%;
+	transform:translateX(-50%);
+	transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+	background-color: var(--main-color);
+	background: linear-gradient(to top right, var(--main-color) 0%, var(--color-two) 100%);
+}
+
+.main-header .main-menu-menu .navigation > li > a:before{
 	position:absolute;
 	content:'';
 	left:50%;
@@ -358,6 +428,11 @@
 
 .main-header .main-menu .navigation > li.current > a:before,
 .main-header .main-menu .navigation > li:hover > a:before{
+	opacity:1;
+}
+
+.main-header .main-menu-menu .navigation > li.current > a:before,
+.main-header .main-menu-menu .navigation > li:hover > a:before{
 	opacity:1;
 }
 
