@@ -7,7 +7,7 @@ const navOurServices = document.getElementById('navOurServices');
 const navPersonalLoanCalculator = document.getElementById('navPersonalLoanCalculator');
 const navPersonalLoan = document.getElementById('navPersonalLoan');
 const navPaydayLoan = document.getElementById('navPaydayLoan');
-const navBusinessLoan = document.getElementById('navBusinessLoan');
+// const navBusinessLoan = document.getElementById('navBusinessLoan');
 const navDebtConsolidation = document.getElementById('navDebtConsolidation');
 const navIslamicFinancing = document.getElementById('navIslamicFinancing');
 const navWeddingLoan = document.getElementById('navWeddingLoan');
@@ -34,6 +34,7 @@ const TenureInMonths = document.getElementById('TenureInMonths');
 const Months = document.getElementById('Months');
 const YourMonthlyPayment = document.getElementById('YourMonthlyPayment');
 const TotalAmount = document.getElementById('TotalAmount');
+const InMonths = document.getElementById('InMonths');
 const CalculatorApplyNow = document.getElementById('CalculatorApplyNow');
 
 //Eligibility
@@ -62,7 +63,7 @@ const footerOurServices = document.getElementById('footerOurServices');
 const footerPersonalLoanCalculator = document.getElementById('footerPersonalLoanCalculator');
 const footerPersonalLoan = document.getElementById('footerPersonalLoan');
 const footerPaydayLoan = document.getElementById('footerPaydayLoan');
-const footerBusinessLoan = document.getElementById('footerBusinessLoan');
+// const footerBusinessLoan = document.getElementById('footerBusinessLoan');
 const footerDebtConsolidation = document.getElementById('footerDebtConsolidation');
 const footerIslamicFinancing = document.getElementById('footerIslamicFinancing');
 const footerWeddingLoan = document.getElementById('footerWeddingLoan');
@@ -122,7 +123,7 @@ function updateNavbar(language) {
         navPersonalLoanCalculator.textContent = 'Kalkulator Pinjaman Peribadi';
         navPersonalLoan.textContent = 'Pembiayaan Peribadi';
         navPaydayLoan.textContent = 'Pembiayaan Hari Gaji';
-        navBusinessLoan.textContent = 'Pembiayaan Bisnes';
+        // navBusinessLoan.textContent = 'Pembiayaan Bisnes';
         navDebtConsolidation.textContent = 'Penyatuan Hutang';
         navIslamicFinancing.textContent = 'pembiayaan Islamik';
         navWeddingLoan.textContent = 'Pembiayaan Kahwin';
@@ -143,7 +144,7 @@ function updateNavbar(language) {
         navPersonalLoanCalculator.textContent = 'Personal Loan Calculator';
         navPersonalLoan.textContent = 'Personal Loan';
         navPaydayLoan.textContent = 'Payday Loan';
-        navBusinessLoan.textContent = 'Business Loan';
+        // navBusinessLoan.textContent = 'Business Loan';
         navDebtConsolidation.textContent = 'Debt Consolidation';
         navIslamicFinancing.textContent = 'Islamic Financing';
         navWeddingLoan.textContent = 'Wedding Loan';
@@ -179,7 +180,8 @@ function updateCalculator(language) {
         TenureInMonths.textContent = 'Tempoh (dalam bulan):';
         Months.textContent = 'Bulan';
         YourMonthlyPayment.textContent = 'Bayaran Bulanan Anda:';
-        TotalAmount.innerHTML = 'Jumlah yang anda bayar dalam&nbsp;<span class="loan-tenure-value"></span> &nbsp;bulan';
+        TotalAmount.textContent = 'Jumlah yang anda bayar dalam';
+        InMonths.textContent = 'bulan';
         CalculatorApplyNow.textContent = 'Mohon Sekarang';
     } else {
         PersonalLaonCalculator.textContent = 'Personal Loan Calculator';
@@ -187,7 +189,8 @@ function updateCalculator(language) {
         TenureInMonths.textContent = 'Tenure (in months):';
         Months.textContent = 'Months';
         YourMonthlyPayment.textContent = 'Your Monthly Payment:';
-        TotalAmount.innerHTML = 'Total amount you pay in&nbsp;<span class="loan-tenure-value"></span> &nbsp;months';
+        TotalAmount.textContent = 'Total amount you pay in';
+        InMonths.textContent = 'months';
         CalculatorApplyNow.textContent = 'Apply Now';
     }
 }
@@ -237,7 +240,7 @@ function updateFooter(language) {
         footerPersonalLoanCalculator.textContent = 'Kalkulator Pinjaman Peribadi';
         footerPersonalLoan.textContent = 'Pembiayaan Peribadi';
         footerPaydayLoan.textContent = 'Pembiayaan Hari Gaji';
-        footerBusinessLoan.textContent = 'Pembiayaan Bisnes';
+        // footerBusinessLoan.textContent = 'Pembiayaan Bisnes';
         footerDebtConsolidation.textContent = 'Penyatuan Hutang';
         footerIslamicFinancing.textContent = 'Pembiayaan Islamik';
         footerWeddingLoan.textContent = 'Pembiayaan Kahwin';
@@ -260,7 +263,7 @@ function updateFooter(language) {
         footerPersonalLoanCalculator.textContent = 'Personal Loan Calculator';
         footerPersonalLoan.textContent = 'Personal Loan';
         footerPaydayLoan.textContent = 'Payday Loan';
-        footerBusinessLoan.textContent = 'Business Loan';
+        // footerBusinessLoan.textContent = 'Business Loan';
         footerDebtConsolidation.textContent = 'Debt Consolidation';
         footerIslamicFinancing.textContent = 'Islamic Financing';
         footerWeddingLoan.textContent = 'Wedding Loan';

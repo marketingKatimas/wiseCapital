@@ -40,7 +40,7 @@ const updateData = (emi) => {
   let totalInterest = ((0.015 * loanTenure) + 1).toFixed(2);
   totalInterestValue.innerHTML = totalInterest;
   const loanTenureValueElement = document.querySelector(".loan-tenure-value");
-  loanTenureValueElement.innerHTML = loanTenure; // Update the loan tenure value in the HTML
+  loanTenureValueElement.innerHTML = loanTenure; 
 };
 
 // Function to update the input values
@@ -80,9 +80,6 @@ range2Inputs.forEach((input) => {
   });
 });
 
-
-
-
 // Add event listeners to range inputs
 document.getElementById("mLoan").addEventListener("input", function() {
   updateLoanAmount(this.value);
@@ -91,6 +88,3 @@ document.getElementById("mLoan").addEventListener("input", function() {
 document.getElementById("mLoan3").addEventListener("input", function() {
   updateLoanTenure(this.value);
 });
-
-// Add event listener to calculate button
-calculateBtn.addEventListener("click", init);
